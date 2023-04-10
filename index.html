@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞机大战</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+</head>
+<body>
+    <div id="content">
+        <!-- 开始游戏 -->
+        <div id="start">
+            <span id="startGame">开始游戏</span>
+        </div>
+        <!-- 游戏页面 -->
+        <div id="game">
+            <div id="mark">0</div>
+            <div id="stop">
+                <span id="continueGame">继续游戏</span>
+                <span id="restart" onclick="restart()">重新开始</span>
+            </div>
+        </div>
+        <!-- 结束页面 -->
+        <div id="end">
+            <div>飞机大战分数</div>
+            <p id="endMark">0</p>
+            <span onclick="restart()">重新开始</span>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

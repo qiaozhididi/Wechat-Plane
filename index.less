@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 420px;
+    height: 100vh;
+    //盒子居中
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    #start {
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/background-start.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        // display: none;
+        display: block;
+    }
+
+    #game {
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/background-game.png);
+        background-size: 100% 100%;
+        background-repeat: repeat-y;
+        display: none;
+        #stop {
+            display: none;
+        }
+        img{
+            position: absolute;
+            top:80%;
+            left: 45%;
+        }
+    }
+
+    #end {
+        width: 120px;
+        height: 130px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        margin-left: -60px;
+        text-align: center;
+        display: none;
+    }
+}
+
+span {
+    display: block;
+    width: 120px;
+    height: 30px;
+    border: 1px solid black;
+    //圆角的最大值为宽度和高度中较小值的一半
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    margin-left: -60px;
+    z-index: 9999;
+    background-color: #c3c8c9;
+
+    //手状
+    cursor: pointer;
+}
+
+#continueGame {
+    bottom: 50%;
+}
+
+#restart {
+    bottom: 45%;
+}
